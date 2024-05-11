@@ -2,12 +2,20 @@ body {
   background: url(./images/clouds-8420083_1920.jpg);
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
   flex-direction: column;
-  padding-top: 40px;
+  padding: 40px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+form {
+  flex: 1;
 }
 
 button,
@@ -24,10 +32,6 @@ button {
   font-weight: 700;
   font-size: 16px;
   border: 2px solid white;
-}
-
-input {
-  outline-color: rgba(36, 178, 255, 0.715);
 }
 
 .weather-info {
@@ -50,4 +54,8 @@ h1#temperature {
 #icon {
   width: 60px;
   height: auto;
+}
+
+#units {
+  border-radius: 12px;
 }

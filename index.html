@@ -10,10 +10,16 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" name="city" placeholder="Enter City Name">
-        <button>Search</button>
-    </form>
+    <header>
+        <form>
+            <input type="text" name="city" placeholder="Enter City Name">
+            <button>Search</button>
+        </form>
+        <select name="units" id="units">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+        </select>
+    </header>
 
     <div class="weather-info">
         <h1 id="location"></h1>
