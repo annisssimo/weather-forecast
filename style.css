@@ -1,0 +1,53 @@
+body {
+  background: url(./images/clouds-8420083_1920.jpg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid gray;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid white;
+}
+
+input {
+  outline-color: rgba(36, 178, 255, 0.715);
+}
+
+.weather-info {
+  text-align: center;
+}
+
+h1#temperature {
+  font-size: 100px;
+  margin: 32px;
+}
+
+.icon-description {
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 100px;
+  height: auto;
+}
