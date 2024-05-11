@@ -17,17 +17,6 @@ searchButton.addEventListener('click', (event) => {
 });
 
 function displayWeatherData(data) {
-  console.log(data);
-  console.log(data.location.name, data.location.country);
-  console.log(data.forecast.forecastday[0].day.condition.text);
-  console.log('Temperature C', data.current.temp_c);
-  console.log('Temperature F', data.current.temp_f);
-  console.log('Feels like C', data.current.feelslike_c);
-  console.log('Feels like F', data.current.feelslike_f);
-  console.log('Sunrise', data.forecast.forecastday[0].astro.sunrise);
-  console.log('Sunset', data.forecast.forecastday[0].astro.sunset);
-  console.log('Humidity', data.current.humidity);
-
   const location = document.querySelector('#location');
   const temperature = document.querySelector('#temperature');
   const description = document.querySelector('#description');
