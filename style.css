@@ -47,7 +47,7 @@ h1#temperature {
   justify-content: center;
 }
 
-.icon {
-  width: 100px;
+#icon {
+  width: 60px;
   height: auto;
 }

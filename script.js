@@ -47,12 +47,16 @@ function displayWeatherData(data) {
 
 async function chooseGif(data) {
   const icon = document.querySelector('#icon');
-  const description = document.querySelector('#description');
+  const city = document.querySelector('input').value;
 
   const response = await fetch(
-    `https://api.giphy.com/v1/gifs/translate?api_key=DEDOpbMhTLEnghhreV57I0SpkrQtAEaT&s=${description}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2b40063f1e29900584626d034d2979bb`,
     { mode: 'cors' }
   );
+  if (!response.ok) {
+    throw new Error('Couldnt fetch weather data');
+  }
   const weatherData = await response.json();
-  icon.src = weatherData.data.images.original.url;
+  const iconId = weatherData.weather[0].icon;
+  icon.src = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
 }
